@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Kindle Library Downloader Paged
 // @namespace    http://tampermonkey.net/
-// @version      0.2
+// @version      0.3
 // @description  Automate downloading books from Kindle library
 // @author       You
 // @match        https://www.amazon.com/hz/mycd/digital-console/contentlist/booksPurchases/*
@@ -20,8 +20,8 @@
 
     // Add this near the top of the script, after 'use strict';
     const CONFIG = {
-        testMode: true,  // Set to true to only download 1 book per page
-        debugLogging: true  // Enable extra debug logging
+        testMode: false,  // Set to true to only download 1 book per page
+        debugLogging: false  // Enable extra debug logging
     };
 
     // Add a button to start the download process
